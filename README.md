@@ -47,6 +47,7 @@ O projeto esta hospedado em Vercel. [Cadastro Clientes]()
 -   MongoDB
 -   Api rest
 -   NodeJS
+-   Vercel
 
 ### Git Clone
 
