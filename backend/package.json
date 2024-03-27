@@ -7,11 +7,12 @@
         "node": "21.x"
     },
     "scripts": {
-        "start": "tsx watch src/server",
+        "build": "tsc",
+        "start": "node dist/server.js",
         "dev": "tsx watch src/server"
     },
     "keywords": [],
-    "author": "",
+    "author": "Wanderley Cabral",
     "license": "ISC",
     "devDependencies": {
         "@types/node": "^20.11.30",
