@@ -1,30 +1,30 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "main": "index.js",
-  "engines": {
-    "node": "21.x"
-  },
-  "scripts": {
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "dev": "tsx watch src/server"
-  },
-  "keywords": [],
-  "author": "Wanderley Cabral",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^20.11.30",
-    "prisma": "^5.11.0",
-    "typescript": "^5.4.3"
-  },
-  "dependencies": {
-    "@fastify/cors": "^9.0.1",
-    "@prisma/client": "^5.11.0",
-    "dotenv": "^16.4.5",
-    "fastify": "^4.26.2",
-    "save": "^2.9.0",
-    "tsx": "^4.7.1"
-  },
-  "description": ""
+    "name": "backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "engines": {
+        "node": "20.x"
+    },
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/server.js",
+        "dev": "tsx watch src/server"
+    },
+    "keywords": [],
+    "author": "Wanderley Cabral",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.11.30",
+        "prisma": "^5.11.0",
+        "typescript": "^5.4.3"
+    },
+    "dependencies": {
+        "@fastify/cors": "^9.0.1",
+        "@prisma/client": "^5.11.0",
+        "dotenv": "^16.4.5",
+        "fastify": "^4.26.2",
+        "save": "^2.9.0",
+        "tsx": "^4.7.1"
+    },
+    "description": ""
 }
