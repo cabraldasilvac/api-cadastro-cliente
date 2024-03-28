@@ -16,7 +16,7 @@ O projeto esta hospedado em Vercel. [Cadastro Clientes]()
 
 | Complete | Under development | In revision |
 | -------- | ----------------- | ----------- |
-| &#x2611; | &#x2612;          | &#x2612;    |
+| &#x2612; | &#x2612;          | &#x2611;    |
 
 ## Primeira parte - ✅ Backend
 
