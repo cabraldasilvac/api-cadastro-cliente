@@ -15,6 +15,7 @@
     "license": "ISC",
     "devDependencies": {
         "@types/node": "^20.11.30",
+        "@vercel/node": "^3.0.25",
         "prisma": "^5.11.0",
         "typescript": "^5.4.3"
     },
