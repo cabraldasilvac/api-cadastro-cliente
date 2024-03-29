@@ -1,8 +1,9 @@
 {
+    "outputDirectory": "public",
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/public/server.js"
+            "destination": "/src/server.ts"
         }
     ]
 }
