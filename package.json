@@ -5,7 +5,7 @@
         "node": "20.x"
     },
     "scripts": {
-        "build": "tsc build -- output public",
+        "build": "tsc build --output public",
         "start": "node dist/server.js",
         "dev": "tsx watch src/server"
     },
