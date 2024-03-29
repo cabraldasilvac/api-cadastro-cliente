@@ -1,13 +1,14 @@
 {
     "name": "api-cadastro-cliente",
     "version": "1.0.0",
+    "description": "API Cadastro de clientes",
+    "main": "dist/server.js",
     "engines": {
         "node": "20.x"
     },
     "scripts": {
         "build": "tsc",
-        "start": "node dist/server.js",
-        "dev": "tsx watch src/server"
+        "dev": "tsx --watch src --exec ts-node src/server.ts"
     },
     "keywords": [],
     "author": "Wanderley Cabral",
@@ -25,6 +26,5 @@
         "fastify": "^4.26.2",
         "save": "^2.9.0",
         "tsx": "^4.7.1"
-    },
-    "description": "API Cadastro de clientes"
+    }
 }
