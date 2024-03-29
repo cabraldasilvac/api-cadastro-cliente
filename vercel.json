@@ -1,9 +1,10 @@
 {
-    "outputDirectory": "public",
-    "rewrites": [
+    "version": 2,
+    "builds": [
         {
-            "source": "/(.*)",
-            "destination": "./src/server.ts"
+            "src": "index.js",
+            "use": "@vercel/node"
         }
-    ]
+    ],
+    "routes": [{ "handle": "filesystem" }, { "src": "/.*", "dest": "index.js" }]
 }
