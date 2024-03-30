@@ -1,12 +1,12 @@
 {
     "name": "api-cadastro-cliente",
     "version": "1.0.0",
+    "description": "API Cadastro de clientes - usando o prisma e MongoDB. Projeto roda na Vercel.",
     "engines": {
         "node": "20.x"
     },
     "scripts": {
         "build": "tsc",
-        "start": "node dist/server.js",
         "dev": "tsx watch src/server"
     },
     "keywords": [],
@@ -25,6 +25,5 @@
         "fastify": "^4.26.2",
         "save": "^2.9.0",
         "tsx": "^4.7.1"
-    },
-    "description": "API Cadastro de clientes"
+    }
 }
