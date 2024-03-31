@@ -2,9 +2,9 @@
     "version": 2,
     "builds": [
         {
-            "src": "server.ts",
+            "src": "./server.ts",
             "use": "@vercel/node"
         }
     ],
-    "routes": [{ "handle": "filesystem" }, { "src": "/.*", "dest": "server.ts" }]
+    "routes": [{ "handle": "filesystem" }, { "src": "/.*", "dest": "./server.ts" }]
 }
