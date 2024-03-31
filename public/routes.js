@@ -15,8 +15,11 @@ const ListCustomersController_1 = require("./controllers/ListCustomersController
 const DeleteCustomerController_1 = require("./controllers/DeleteCustomerController");
 function routes(fastify, options) {
     return __awaiter(this, void 0, void 0, function* () {
-        fastify.get('/teste', (request, replay) => __awaiter(this, void 0, void 0, function* () {
+        fastify.get('/', (request, replay) => __awaiter(this, void 0, void 0, function* () {
             return { ok: true };
+        }));
+        fastify.get('/hello', (request, replay) => __awaiter(this, void 0, void 0, function* () {
+            return { hello: 'Hello World!!' };
         }));
         fastify.post('/customer', (request, reply) => __awaiter(this, void 0, void 0, function* () {
             return new CreateCustomerController_1.CreateCustomerController().handle(request, reply);

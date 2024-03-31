@@ -23,14 +23,10 @@ const start = () => __awaiter(void 0, void 0, void 0, function* () {
     yield app.register(cors_1.default);
     yield app.register(routes_1.routes);
     try {
-        yield app.listen({ port: 80 });
+        yield app.listen({ port: 3333 });
     }
     catch (err) {
         process.exit(1);
     }
 });
 start();
-exports.default = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    yield app.ready();
-    app.server.emit('request', req, res);
-});
