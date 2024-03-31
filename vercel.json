@@ -12,7 +12,7 @@
             "handle": "filesystem"
         },
         {
-            "src": "/routes.*",
+            "src": "/.*",
             "dest": "./server.ts"
         }
     ]
