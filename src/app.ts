@@ -1,23 +1,14 @@
-import {
-  FastifyInstance,
-  FastifyReply,
-  FastifyRequest,
-  FastifyServerOptions,
-} from "fastify"
-import { routes } from "./routes"
+import { FastifyInstance, FastifyReply, FastifyRequest, FastifyServerOptions } from 'fastify'
+import { routes } from './routes'
 
-async function app(
-  instance: FastifyInstance,
-  opts: FastifyServerOptions,
-  done: any
-) {
-  instance.get("/", async (req: FastifyRequest, res: FastifyReply) => {
-    res.status(200).send({
-      hello: "World",
+async function app(instance: FastifyInstance, opts: FastifyServerOptions, done: any) {
+    instance.get('/', async (req: FastifyRequest, res: FastifyReply) => {
+        res.status(200).send({
+            hello: 'World',
+        })
     })
-  })
-  instance.register(routes, { prefix: "/api" })
-  done()
+    instance.register(routes, { prefix: '/api' })
+    done()
 }
 
 export default app
