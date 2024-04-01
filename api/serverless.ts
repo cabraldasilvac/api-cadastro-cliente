@@ -13,7 +13,7 @@ const app = Fastify({
 
 // Register your application as a normal plugin.
 app.register(routes, {
-    prefix: '/api',
+    prefix: '/',
 })
 
 export default async (req: any, res: any) => {
