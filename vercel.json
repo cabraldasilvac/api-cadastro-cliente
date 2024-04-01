@@ -1,19 +1,9 @@
 {
-    "version": 2,
-    "builds": [
+    "outputDirectory": "build",
+    "rewrites": [
         {
-            "src": "./server.ts",
-            "use": "@vercel/node"
-        }
-    ],
-
-    "routes": [
-        {
-            "handle": "filesystem"
-        },
-        {
-            "src": "/.*",
-            "dest": "./server.ts"
+            "source": "/(.*)",
+            "destination": "/api/serverless.ts"
         }
     ]
 }
