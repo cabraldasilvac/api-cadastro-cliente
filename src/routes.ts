@@ -12,15 +12,15 @@ export async function routes(fastify: FastifyInstance, options: FastifyPluginOpt
         return { hello: 'Hello World!!' }
     })
 
-    fastify.post('/customer', async (request: FastifyRequest, reply: FastifyReply) => {
-        return new CreateCustomerController().handle(request, reply)
+    fastify.post('/customer', async (request: FastifyRequest, replay: FastifyReply) => {
+        return new CreateCustomerController().handle(request, replay)
     })
 
-    fastify.get('/customers', async (request: FastifyRequest, reply: FastifyReply) => {
-        return new ListCustomersController().handle(request, reply)
+    fastify.get('/customers', async (request: FastifyRequest, replay: FastifyReply) => {
+        return new ListCustomersController().handle(request, replay)
     })
 
-    fastify.delete('/customer', async (request: FastifyRequest, reply: FastifyReply) => {
-        return new DeleteCustomerController().handle(request, reply)
+    fastify.delete('/customer', async (request: FastifyRequest, replay: FastifyReply) => {
+        return new DeleteCustomerController().handle(request, replay)
     })
 }
