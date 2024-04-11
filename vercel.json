@@ -1,7 +1,6 @@
 {
     "version": 2,
     "builds": [{ "source": "api/serverless.ts", "use": "@vercel/node" }],
-    "outputDirectory": "build",
     "rewrites": [
         {
             "source": "/(.*)",
