@@ -3,11 +3,14 @@
     "version": "1.0.0",
     "description": "API Cadastro de clientes - usando o prisma e MongoDB. Projeto roda na Vercel.",
     "scripts": {
-        "dev": "tsx watch src/app.ts",
-        "build": "prisma generate && tsc",
-        "vercel": "vercel dev",
-        "deploy": "npx vercel"
+      "dev": "tsx watch src/app.ts", // Script para ambiente de desenvolvimento
+      "build": "npm run prisma:generate && npm run typescript:compile", // Script para build
+      "prisma:generate": "prisma generate", // Comando para gerar os artefatos do Prisma
+      "typescript:compile": "tsc", // Comando para compilar o TypeScript
+      "vercel": "vercel dev", // Comando para executar localmente com Vercel
+      "deploy": "npm run prisma:generate && npx vercel --prod" // Comando para fazer deploy na Vercel
     },
+
     "keywords": [],
     "author": "Wanderley Cabral",
     "license": "ISC",
