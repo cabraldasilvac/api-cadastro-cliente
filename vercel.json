@@ -1,14 +1,21 @@
 {
-    "version": 2,
-    "builds": [{ "src": "api/serverless.ts", "use": "@vercel/node" }],
+    "outputDirectory": "build",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/api/serverless.ts"
+        }
+    ],
     "routes": [
         {
             "src": "/api/(.*)",
             "methods": ["GET", "POST", "PUT", "DELETE"],
-            "dest": "/api/serverless.ts",
             "headers": {
-                "Access-Control-Allow-Origin": "https://cadastro-clientes-two.vercel.app/"
-            }
+                "Access-Control-Allow-Origin": "*", // Substitua * pelo domínio permitido, se possível
+                "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE",
+                "Access-Control-Allow-Headers": "Content-Type"
+            },
+            "dest": "/api/serverless.ts"
         }
     ]
 }
