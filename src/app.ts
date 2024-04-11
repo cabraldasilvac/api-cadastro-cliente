@@ -7,7 +7,7 @@ async function app(instance: FastifyInstance, opts: FastifyServerOptions, done: 
             hello: 'API Cadastro de Cliente',
         })
     })
-    instance.register(routes, { prefix: '/' })
+    instance.register(routes, { prefix: '/api' })
     done()
 }
 
