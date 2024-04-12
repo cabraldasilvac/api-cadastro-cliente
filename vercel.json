@@ -2,12 +2,7 @@
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/api/serverless.ts"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/api/(.*)",
+            "destination": "/api/serverless.ts",
             "methods": ["GET", "POST", "PUT", "DELETE"],
             "headers": {
                 "Access-Control-Allow-Origin": "https://cadastro-clientes-two.vercel.app",
