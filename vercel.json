@@ -1,5 +1,4 @@
 {
-    "outputDirectory": "build",
     "rewrites": [
         {
             "source": "/(.*)",
@@ -11,11 +10,11 @@
             "src": "/api/(.*)",
             "methods": ["GET", "POST", "PUT", "DELETE"],
             "headers": {
-                "Access-Control-Allow-Origin": "https://cadastro-clientes-two.vercel.app/api/",
+                "Access-Control-Allow-Origin": "https://cadastro-clientes-two.vercel.app",
                 "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE",
                 "Access-Control-Allow-Headers": "Content-Type"
             },
-            "dest": "/api/serverless.ts"
+            "continue": true
         }
     ]
 }
